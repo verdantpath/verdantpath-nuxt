@@ -74,9 +74,6 @@
         </v-card-actions>
       </v-card>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium pariatur sunt laboriosam quaerat doloribus quam quisquam perspiciatis recusandae! Iure fugiat perspiciatis explicabo sapiente harum distinctio corrupti impedit odio necessitatibus?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium pariatur sunt laboriosam quaerat doloribus quam quisquam perspiciatis recusandae! Iure fugiat perspiciatis explicabo sapiente harum distinctio corrupti impedit odio necessitatibus?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium pariatur sunt laboriosam quaerat doloribus quam quisquam perspiciatis recusandae! Iure fugiat perspiciatis explicabo sapiente harum distinctio corrupti impedit odio necessitatibus?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium pariatur sunt laboriosam quaerat doloribus quam quisquam perspiciatis recusandae! Iure fugiat perspiciatis explicabo sapiente harum distinctio corrupti impedit odio necessitatibus?</p>
     </v-col>
   </v-row>
 </template>
