@@ -1,7 +1,10 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
+    <v-col cols="12" sm="8" md="10">
       <h1>Home</h1>
+      <h2>Web Developer in Portland, Or</h2>
+      <h3>Vue.js • WordPress • Drupal • Front End • Full Stack</h3>
+      <div style="height: 300px;"></div>
       <v-card class="logo py-4 d-flex justify-center">
         <NuxtLogo />
         <VuetifyLogo />

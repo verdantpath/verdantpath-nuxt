@@ -49,9 +49,11 @@
         <v-icon>mdi-minus</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
-      <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="portfolio">Portfolio</nuxt-link>
-      <nuxt-link to="contact">Contact</nuxt-link>
+      <div class="main-nav">
+        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="portfolio">Portfolio</nuxt-link>
+        <nuxt-link to="contact">Contact</nuxt-link>
+      </div>
       <v-spacer />
       <!-- <v-btn
         icon

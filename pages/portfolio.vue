@@ -1,7 +1,7 @@
 <template>
 <div>
-  <h1>Portfolios</h1>
-  <img src="/_nuxt/assets/images/Fog-divided-by-sun-rays.jpg" style="width: 100%;">
+  <h1>Portfolio</h1>
+  <img src="/_nuxt/assets/images/Fog-divided-by-sun-rays.jpg" style="width: 50%;">
   </div>
 </template>
 <script>
@@ -9,10 +9,10 @@
     
   }
 </script>
-<style lang="scss">
+<style scoped lang="scss">
 .v-application--wrap {
   /*background-image: url("/_nuxt/assets/images/Fog-divided-by-sun-rays.jpg");*/
-  background: url("/_nuxt/assets/images/Fog-divided-by-sun-rays.jpg");
+  /*background: url("/_nuxt/assets/images/Fog-divided-by-sun-rays.jpg");*/
   /*background: yellow;*/
   display: block;
 
