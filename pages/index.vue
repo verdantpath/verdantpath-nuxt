@@ -1,10 +1,12 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="10">
-      <h1>Home</h1>
-      <h2>Web Developer in Portland, Or</h2>
-      <h3>Vue.js • WordPress • Drupal • Front End • Full Stack</h3>
-      <div style="height: 300px;"></div>
+      <div class="home-page-content-wrapper">
+        <div><h1>Home</h1>
+        <h2>Web Developer in Portland, Oregon</h2>
+        <h3>Vue.js • WordPress • Drupal • Front End • Full Stack</h3>
+        </div>
+      </div>
       <v-card class="logo py-4 d-flex justify-center">
         <NuxtLogo />
         <VuetifyLogo />
@@ -44,7 +46,6 @@
               issue board
             </a>.
           </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
           <div class="text-xs-right">
             <em><small>&mdash; John Leider</small></em>
           </div>
@@ -86,3 +87,58 @@ export default {
   name: 'IndexPage'
 }
 </script>
+
+<style scoped lang="scss">
+.v-toolbar__title {
+  color: magenta;
+}
+.v-application--wrap {
+  background: url("/_nuxt/assets/images/Fog-divided-by-sun-rays.jpg") no-repeat center center fixed;
+  background-size: cover;
+  // filter: grayscale(1);
+  &::before {
+    background-color: #0065e0;
+    // background-color: rgba(33, 190, 222, 0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+  }
+}
+h1 {
+  display: none;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2rem;
+  &:before,
+  &:after { 
+  	position:absolute; 
+  	width:5%; 
+  	height:3px; 
+  	content:''; 
+  	border-top:2px solid rgba(#fff, 0.7); 
+  	// border-bottom:1px solid rgba($gray-dark, 0.3); 
+  	margin-top:1.50rem; 
+  }
+    &:before { 
+    	margin-left:-6%; 
+    }
+    &:after { 
+    	margin-left:1%; 
+    }
+}
+.home-page-content-wrapper {
+  text-align: center;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+</style>
