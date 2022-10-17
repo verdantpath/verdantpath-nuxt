@@ -15,7 +15,7 @@
 <script>
 export default {
   name: 'EmptyLayout',
-  layout: 'empty',
+  layout: 'error-layout',
   props: {
     error: {
       type: Object,
@@ -38,8 +38,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 h1 {
   font-size: 20px;
 }
+
 </style>
