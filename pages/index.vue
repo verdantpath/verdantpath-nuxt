@@ -98,30 +98,12 @@ export default {
       ]      
     }
   },
-  name: 'IndexPage'
+  name: 'IndexPage',
+  asyncData() {
+  }
 }
 </script>
 <style scoped lang="scss">
-// @import '~/assets/css/home.scss';
-.v-toolbar__title {
-  color: magenta;
-}
-// .v-application--wrap {
-//   background: url("/_nuxt/assets/images/Fog-divided-by-sun-rays.jpg") no-repeat center center fixed;
-//   background-size: cover;
-//   // filter: grayscale(1);
-//   &::before {
-//     background-color: #0065e0;
-//     // background-color: rgba(33, 190, 222, 0.5);
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     opacity: 0.4;
-//   }
-// }
 h1 {
   display: none;
 }
