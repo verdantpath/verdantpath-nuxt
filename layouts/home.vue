@@ -68,7 +68,11 @@
 
 <script>
 export default {
-  name: 'DefaultLayout',
+  name: 'HomeLayout',
+  transition: {
+    name: 'fade-layout',
+    mode: 'out-in'
+  },
   data () {
     return {
       clipped: false,

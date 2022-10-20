@@ -84,7 +84,28 @@
 
 <script>
 export default {
-  layout: 'home',
+  //layout: 'home',
+  // transition: {
+  //   name: 'fade-home',
+  //   mode: 'out-in'
+  // },
+  mounted() {
+    // var pageBgEl = document.querySelector('.v-application--wrap');
+    var pageBgEl = document.querySelector('.bg-wrapper');
+    // pageBgEl.style.backgroundImage = "url('https://verdantpath.io/wp-content/uploads/2017/03/home_fw-05.jpg')"
+    setTimeout(function() { 
+      pageBgEl.classList.add('home')
+      console.log('!@# home mounted')  
+    }, 100);
+  },
+  beforeDestroy() {
+    // var pageBgEl = document.querySelector('.v-application--wrap');
+    var pageBgEl = document.querySelector('.bg-wrapper');
+    // pageBgEl.style.backgroundImage = "none"
+    setTimeout(function() { 
+      pageBgEl.classList.remove('home')
+    }, 300);
+  },
   head () {
     return {
       title: 'Web Developer in Portland, Oregon',

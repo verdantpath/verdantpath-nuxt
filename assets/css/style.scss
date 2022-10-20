@@ -1,4 +1,18 @@
-.home .v-application--wrap {
+// Media Queries
+
+@media (min-width: 768px) {
+  .v-app-bar__nav-icon {
+    // display: none !important;
+  }
+}
+@media (max-width: 769px) {
+  .main-nav {
+    display: none;
+  }
+}
+
+// Main Styles
+.bg-wrapper.home  {
   background: url("https://verdantpath.io/wp-content/uploads/2017/03/home_fw-05.jpg") no-repeat center center fixed;
   background-size: cover;
   // filter: grayscale(1);
@@ -22,6 +36,10 @@
     color: #fff;
     text-decoration: none;
     padding: 0 1rem;
+  }
+  li {
+    display: inline;
+    list-style-type: none;
   }
 }
 .portfolio-card {

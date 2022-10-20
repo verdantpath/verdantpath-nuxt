@@ -1,10 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  pageTransition: {
-    name: 'fade',
-    mode: 'out-in'
-  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - verdantpath-nuxt',
@@ -67,5 +63,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  pageTransition: {
+    name: 'fade',
+    mode: 'out-in'
+  },
 }
+
