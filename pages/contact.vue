@@ -1,14 +1,31 @@
 <template>
   <div>
-    <transition><h1>Contact</h1></transition>
-    <v-form>
-      <v-text-field type="text" name="name" placeholder="who dis"></v-text-field>
-      <v-input type="submit"></v-input>
-    </v-form>
+    <h1>Contact</h1>
+    <v-container class="mb-12">
+      <v-layout row wrap class="mb-3">
+        <v-row>
+          <v-col align-self="center">
+            <v-form>
+              <v-text-field type="text" name="name" placeholder="Name"></v-text-field>
+              <v-text-field type="text" name="email" placeholder="Email"></v-text-field>
+              <v-textarea name="message" placeholder="Message"></v-textarea>
+              <v-btn type="submit">Send</v-btn>
+            </v-form>
+          </v-col>
+        </v-row>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 <script>
   export default {
+    data() {
+      return {
+        name: '',
+        email: '',
+        message: ''
+      }
+    }
   }
 </script>
 <style>

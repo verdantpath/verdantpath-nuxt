@@ -8,8 +8,9 @@
             <v-responsive class="pt-4">
               <img :src="project.imageThumbnail" class="portfolio-thumb">
             </v-responsive>
-            <v-card-text>
-              <h3><nuxt-link :to="`portfolio/${project.id}`">{{ project.name }}</nuxt-link></h3>
+            <v-card-text class="project-description">
+              <h3><nuxt-link :to="`/portfolio/${project.id}`">{{ project.name }}</nuxt-link></h3>
+              <h4>{{ project.technology }}</h4>
             </v-card-text>
           </v-card>
         </v-flex>
