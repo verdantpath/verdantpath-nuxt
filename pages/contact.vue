@@ -5,12 +5,18 @@
       <v-layout row wrap class="mb-3">
         <v-row>
           <v-col align-self="center">
-            <v-form>
-              <v-text-field type="text" name="name" placeholder="Name"></v-text-field>
-              <v-text-field type="text" name="email" placeholder="Email"></v-text-field>
-              <v-textarea name="message" placeholder="Message"></v-textarea>
+            <v-form @submit.prevent="handleSubmit">
+              <v-text-field type="text" name="name" placeholder="Name" v-model="name"></v-text-field>
+              <v-text-field type="text" name="email" placeholder="Email" v-model="email"></v-text-field>
+              <v-textarea name="message" placeholder="Message" v-model="message"></v-textarea>
               <v-btn type="submit">Send</v-btn>
             </v-form>
+            <div>
+              <p>Result</p>
+              <p>{{ name }}</p>
+              <p>{{ email }}</p>
+              <p>{{ message }}</p>
+            </div>
           </v-col>
         </v-row>
       </v-layout>
@@ -18,12 +24,25 @@
   </div>
 </template>
 <script>
+  import { projectFirestore } from '../firebase/config'
+
   export default {
     data() {
       return {
         name: '',
         email: '',
         message: ''
+      }
+    },
+    methods: {
+      handleSubmit() {
+        let userMessage = {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        }
+
+        projectFirestore.collection('userMessages').add(userMessage)
       }
     }
   }
