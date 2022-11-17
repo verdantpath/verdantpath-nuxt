@@ -5,12 +5,18 @@
       <v-layout row wrap class="mb-3">
         <v-row>
           <v-col align-self="center">
-            <v-form>
-              <v-text-field type="text" name="name" placeholder="Name"></v-text-field>
-              <v-text-field type="text" name="email" placeholder="Email"></v-text-field>
-              <v-textarea name="message" placeholder="Message"></v-textarea>
+            <v-form @submit.prevent="handleSubmit">
+              <v-text-field type="text" name="name" placeholder="Name" v-model="form.name" required></v-text-field>
+              <v-text-field type="text" name="email" placeholder="Email" v-model="form.email" required></v-text-field>
+              <v-textarea name="message" placeholder="Message" v-model="form.message" required></v-textarea>
               <v-btn type="submit">Send</v-btn>
             </v-form>
+            <div>
+              <p>Result</p>
+              <p>{{ form.name }}</p>
+              <p>{{ form.email }}</p>
+              <p>{{ form.message }}</p>
+            </div>
           </v-col>
         </v-row>
       </v-layout>
@@ -18,12 +24,36 @@
   </div>
 </template>
 <script>
+  import secure from '@/secure'
+  import axios from 'axios'
   export default {
+    name: 'ContactForm',
     data() {
       return {
-        name: '',
-        email: '',
-        message: ''
+        form: {
+          name: '',
+          email: '',
+          message: ''
+        }
+      }
+    },
+    methods: {
+      handleSubmit: async function() {
+        const formData = new FormData();
+        for (let [key, value] of Object.entries(this.form)) {
+          formData.append(key, value);
+        }
+
+        await axios
+          .post(secure.formeezyEndpoint, formData)
+          .then(({ data }) => {
+            const { redirect } = data;
+            // Redirect used for reCAPTCHA and / or thank you page
+            window.location.href = redirect;
+          })
+          .catch((e) => {
+            window.location.href = e.response.data.redirect;
+          });
       }
     }
   }

@@ -44,8 +44,7 @@
       </v-btn> -->
       
       <v-toolbar-title v-text="title" />
-      <v-spacer></v-spacer>
-      <div class="main-nav right">
+      <div class="main-nav right d-flex justify-end">
         <!-- <nuxt-link to="/">Home</nuxt-link>
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         <nuxt-link to="/code">Code</nuxt-link>
