@@ -55,6 +55,17 @@
             window.location.href = e.response.data.redirect;
           });
       }
+    },
+    methods: {
+      handleSubmit() {
+        let userMessage = {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        }
+
+        projectFirestore.collection('userMessages').add(userMessage)
+      }
     }
   }
 </script>
