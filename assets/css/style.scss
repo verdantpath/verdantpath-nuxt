@@ -2,12 +2,13 @@
 
 @media (min-width: 768px) {
   .v-app-bar__nav-icon {
-    // display: none !important;
+    display: none !important;
   }
+
 }
 @media (max-width: 769px) {
-  .main-nav {
-    display: none;
+  .v-application .d-flex.main-nav {
+    display: none !important;
   }
 }
 
@@ -40,6 +41,9 @@
   li {
     display: inline;
     list-style-type: none;
+  }
+  .nuxt-link-exact-active {
+    color: lime;
   }
 }
 .portfolio-card {
