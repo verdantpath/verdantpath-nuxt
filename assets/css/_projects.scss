@@ -1,0 +1,28 @@
+.project-desktop {
+  margin: 0 !important;
+  width: 70%;
+}
+.project-tablet {
+  position: absolute;
+  bottom: 7px;
+  right: 10%;
+  width: 30%;
+  margin-bottom: 0;
+}
+.project-mobile {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  width: 15%
+}
+.project-images {
+  position: relative;
+  margin: 0 0 3rem;
+  img {
+    border: 1px solid magenta;
+    box-shadow: 0 0 8px #fff;
+  }
+}
+.description {
+  margin: 0 0 3.5rem;
+}
