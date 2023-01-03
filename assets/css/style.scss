@@ -1,8 +1,10 @@
+@import 'projects';
+
 // Media Queries
 
 @media (min-width: 768px) {
   .v-app-bar__nav-icon {
-    display: none !important;
+    // display: none !important;
   }
 
 }
@@ -32,19 +34,37 @@
 .v-toolbar__title {
   color: magenta;
 }
+header:before {
+  content: '';
+  height: 3px;
+  background-color: green;
+}
+.v-toolbar__content {
+  border-top: 3px solid magenta;
+}
+#header-logo {
+  height: 40px;
+}
 .main-nav {
   a {
     color: #fff;
     text-decoration: none;
     padding: 0 1rem;
+    &:hover {
+      color: cyan;
+    }
   }
+  
   li {
     display: inline;
     list-style-type: none;
   }
-  .nuxt-link-exact-active {
+  .nuxt-link-active {
     color: lime;
   }
+}
+.project-container {
+  padding: 5rem 0 3rem;
 }
 .portfolio-card {
   padding: 0 1rem;
