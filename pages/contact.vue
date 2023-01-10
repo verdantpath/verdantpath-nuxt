@@ -5,18 +5,20 @@
       <v-layout row wrap class="mb-3">
         <v-row>
           <v-col align-self="center">
-            <v-form @submit.prevent="handleSubmit">
-              <v-text-field type="text" name="name" placeholder="Name" v-model="form.name" required></v-text-field>
-              <v-text-field type="text" name="email" placeholder="Email" v-model="form.email" required></v-text-field>
-              <v-textarea name="message" placeholder="Message" v-model="form.message" required></v-textarea>
-              <v-btn type="submit">Send</v-btn>
-            </v-form>
-            <div>
-              <p>Result</p>
+            <div id="contact-form-wrapper">
+              <v-form @submit.prevent="handleSubmit">
+                <h3>How can I help you?</h3>
+                <v-text-field type="text" name="name" placeholder="Name" v-model="form.name" required></v-text-field>
+                <v-text-field type="text" name="email" placeholder="Email" v-model="form.email" required></v-text-field>
+                <v-textarea name="message" placeholder="Message" v-model="form.message" required></v-textarea>
+                <v-btn type="submit">Send</v-btn>
+              </v-form>
+            </div>
+            <!-- <div>
               <p>{{ form.name }}</p>
               <p>{{ form.email }}</p>
               <p>{{ form.message }}</p>
-            </div>
+            </div> -->
           </v-col>
         </v-row>
       </v-layout>
@@ -69,7 +71,14 @@
     }
   }
 </script>
+
 <style>
+#contact-form-wrapper {
+  max-width: 640px;
+  margin: 5rem auto;
+  background-color: #444;
+  padding: 1.5rem;
+}
 .v-enter,
 .v-leave-to {
   opacity: 0;
