@@ -1,9 +1,12 @@
+const formatSlug = (name) => {
+  return name.replace(/[^\w\s]/gi, '').toLowerCase().split(' ').join('-')
+}
 const projects =  [
   {
     id: '01',
     name: 'Affiliated Media',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     images: [
@@ -22,7 +25,7 @@ const projects =  [
     id: '02',
     name: 'Emotive Brand',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_emotive-brand_desktop.jpg',
@@ -36,7 +39,7 @@ const projects =  [
     id: '03',
     name: 'Vista Capital Partners',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_vistacp_desktop.jpg',
@@ -50,7 +53,7 @@ const projects =  [
     id: '04',
     name: 'Juniper Partners',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'HTML Landing Page',
     imageThumbnail: 'https://verdantpath.io/projects/work_juniper_desktop.jpg',
@@ -64,7 +67,7 @@ const projects =  [
     id: '05',
     name: 'Rhodes Architecture',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_rhodes_desktop.jpg',
@@ -78,7 +81,7 @@ const projects =  [
     id: '06',
     name: 'Evergreen Consulting',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_evergreen_desktop.jpg',
@@ -91,7 +94,7 @@ const projects =  [
     id: '07',
     name: 'Washington Tribes',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'Drupal',
     imageThumbnail: 'https://verdantpath.io/projects/work_wa-tribes_desktop.jpg',
@@ -105,7 +108,7 @@ const projects =  [
     id: '08',
     name: 'Seattle City Club',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'Drupal',
     imageThumbnail: 'https://verdantpath.io/projects/work_seattle-city-club_desktop.jpg',
@@ -119,7 +122,7 @@ const projects =  [
     id: '09',
     name: 'Culinary Traveler',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_culinary-traveler_desktop.jpg',
@@ -133,7 +136,7 @@ const projects =  [
     id: '10',
     name: 'Sravasti Abbey',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_sravasti-abbey_desktop.jpg',
@@ -147,7 +150,7 @@ const projects =  [
     id: '11',
     name: 'PacTech Law',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_pactech_desktop.jpg',
@@ -161,7 +164,7 @@ const projects =  [
     id: '12',
     name: 'Port Ludlow Resort',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_port-ludlow_desktop.jpg',
@@ -175,7 +178,7 @@ const projects =  [
     id: '13',
     name: 'Seattle Genomics',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_seattle-genomics_desktop.jpg',
@@ -189,7 +192,7 @@ const projects =  [
     id: '14',
     name: 'Casa de la Sirena',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_casa_desktop.jpg',
@@ -203,7 +206,7 @@ const projects =  [
     id: '15',
     name: 'Open Adoption and Family Services',
     get slug() {
-      return this.name.toLowerCase().split(' ').join('-')
+      return formatSlug(this.name)
     },
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_open-adopt_desktop.jpg',
@@ -213,7 +216,132 @@ const projects =  [
     description: 'WordPress site for a national adoption agency in Portland.',
     url: 'http://www.openadopt.org/'
   },
-
+  {
+    id: '16',
+    name: 'The Classen Team',
+    get slug() {
+      return formatSlug(this.name)
+    },
+    technology: 'WordPress',
+    imageThumbnail: 'https://verdantpath.io/projects/work_classen_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_classen_desktop.jpg',
+    imageTablet: 'https://verdantpath.io/projects/work_classen_tablet.jpg',
+    imageMobile: 'https://verdantpath.io/projects/work_classen_mobile.jpg',
+    description: 'WordPress site for a real estate company in Washington.',
+    url: 'http://theclassenteam.com/'
+  },
+  {
+    id: '17',
+    name: 'Lowenstein & Weatherwax',
+    get slug() {
+      return formatSlug(this.name)
+    },
+    technology: 'WordPress',
+    imageThumbnail: 'https://verdantpath.io/projects/work_lowenstein-weatherwax_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_lowenstein-weatherwax_desktop.jpg',
+    imageTablet: '',
+    imageMobile: '',
+    description: 'Drupal site for a patent and IP law firm in California.',
+    url: 'http://lowensteinweatherwax.com/'
+  },
+  {
+    id: '18',
+    name: 'The Commencement',
+    get slug() {
+      return formatSlug(this.name)
+    },
+    technology: 'WordPress',
+    imageThumbnail: 'https://verdantpath.io/projects/work_commencement_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_commencement_desktop.jpg',
+    imageTablet: 'https://verdantpath.io/projects/work_commencement_tablet.jpg',
+    imageMobile: 'https://verdantpath.io/projects/work_commencement_mobile.jpg',
+    description: 'Drupal site for a condominium development in Washington.',
+    url: 'http://www.thecommencement.com/'
+  },
+  {
+    id: '19',
+    name: 'Humani Pilates',
+    get slug() {
+      return formatSlug(this.name)
+    },
+    technology: 'WordPress',
+    imageThumbnail: 'https://verdantpath.io/projects/work_humani_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_humani_desktop.jpg',
+    imageTablet: '',
+    imageMobile: '',
+    description: 'WordPress site for a Pilates studio in California.',
+    url: 'http://humanistudios.com/'
+  },
+  {
+    id: '20',
+    name: 'Landed Gentry',
+    get slug() {
+      return formatSlug(this.name)
+    },
+    technology: 'WordPress',
+    imageThumbnail: 'https://verdantpath.io/projects/work_landedgentry_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_landedgentry_desktop.jpg',
+    imageTablet: '',
+    imageMobile: '',
+    description: 'Drupal site for a real estate company in Washington.',
+    url: 'http://humanistudios.com/'
+  },
+  {
+    id: '21',
+    name: 'Project Serve',
+    get slug() {
+      return formatSlug(this.name)
+    },
+    technology: 'WordPress',
+    imageThumbnail: 'https://verdantpath.io/projects/work_projectserve_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_projectserve_desktop.jpg',
+    imageTablet: '',
+    imageMobile: '',
+    description: 'WordPress site for a sleep study out of Stanford University.',
+    url: 'http://projectservesleep.com/'
+  },
+  {
+    id: '22',
+    name: 'Mason Oregon',
+    get slug() {
+      return formatSlug(this.name)
+    },
+    technology: 'WordPress',
+    imageThumbnail: 'https://verdantpath.io/projects/work_mason-oregon_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_mason-oregon_desktop.jpg',
+    imageTablet: 'https://verdantpath.io/projects/work_mason-oregon_tablet.jpg',
+    imageMobile: 'https://verdantpath.io/projects/work_mason-oregon_mobile.jpg',
+    description: 'WordPress site for a masonry service company in Portland.',
+    url: 'http://masonoregon.com/'
+  },
+  {
+    id: '23',
+    name: 'Robin Chell Design',
+    get slug() {
+      return formatSlug(this.name)
+    },
+    technology: 'WordPress',
+    imageThumbnail: 'https://verdantpath.io/projects/work_robin-chell-design_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_robin-chell-design_desktop.jpg',
+    imageTablet: '',
+    imageMobile: '',
+    description: 'HTML site for an interior design firm in Seattle.',
+    url: 'http://robinchelldesign.com/'
+  },
+  {
+    id: '24',
+    name: 'Axiom Design Build',
+    get slug() {
+      return formatSlug(this.name)
+    },
+    technology: 'WordPress',
+    imageThumbnail: 'https://verdantpath.io/projects/work_axiom_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_axiom_desktop.jpg',
+    imageTablet: '',
+    imageMobile: '',
+    description: 'WordPress site for an architecture firm in Seattle.',
+    url: 'http://axiomdesignbuild.com/'
+  }
 ]
 
 export default projects
