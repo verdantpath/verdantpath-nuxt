@@ -33,11 +33,4 @@
 .v-toolbar__title {
   color: magenta;
 }
-.v-card {
-  background: rgba(255,255,255,0.3);
-  color: #000;
-  p {
-    color: #000;
-  }
-}
 </style>
