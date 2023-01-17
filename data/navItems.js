@@ -2,22 +2,26 @@ const navItems = [
   {
     icon: '',
     title: 'Home',
-    to: '/'
+    to: '/',
+    exact: true
   },
   {
     icon: '',
     title: 'Portfolio of Work',
-    to: '/portfolio'
+    to: '/portfolio',
+    exact: false
   },
   {
     icon: '',
     title: 'Code Examples',
-    to: '/code'
+    to: '/code',
+    exact: false
   },
   {
     icon: '',
     title: 'Contact Us',
-    to: '/contact'
+    to: '/contact',
+    exact: false
   },
 ]
 export default navItems
