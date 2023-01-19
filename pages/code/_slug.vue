@@ -31,8 +31,8 @@ import codes from '@/data/code'
   }
 </script>
 <style scoped lang="scss">
-h3 {
-  font-size: 1.25rem;
-  margin: 0 0 1rem;
-}
+// h3 {
+//   font-size: 1.25rem;
+//   margin: 0 0 1rem;
+// }
 </style>
