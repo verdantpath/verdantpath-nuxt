@@ -1,3 +1,13 @@
+.project-container {
+  padding: .5rem 0 3rem;
+  h3 {
+    font-size: 1.75rem; 
+    margin: 0 0 1rem;
+  }
+}
+.portfolio-card-wrapper {
+  display: flex;
+}
 .project-desktop {
   margin: 0 !important;
   width: 70%;
@@ -19,10 +29,23 @@
   position: relative;
   margin: 0 0 3rem;
   img {
-    border: 1px solid magenta;
-    box-shadow: 0 0 8px #fff;
+    // border: 1px solid magenta;
+    box-shadow: 0 0 6px #DDD;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #BBB, #444) 1;
   }
 }
 .description {
   margin: 0 0 3.5rem;
+}
+.lowenstein--weatherwax,
+.the-commencement,
+.humani-pilates,
+.landed-gentry,
+.project-serve {
+  .project-tablet,
+  .project-mobile {
+    display: none;
+  }
 }
