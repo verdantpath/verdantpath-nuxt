@@ -4,14 +4,15 @@
       <div class="home-page-content-wrapper">
         <div><h1>Home</h1>
         <h2>Web Developer in Portland, Oregon</h2>
-        <h3>Vue.js • WordPress • Drupal • Front End • Full Stack</h3>
+        <h3>Vue.js • WordPress • Drupal • Front-End • Full-Stack</h3>
+        <!-- <p>@@{{ test.image }}</p> -->
         </div>
       </div>
-      <v-card class="logo py-4 d-flex justify-center">
+      <!-- <v-card class="logo py-4 d-flex justify-center">
         <NuxtLogo />
         <VuetifyLogo />
-      </v-card>
-      <v-card>
+      </v-card> -->
+      <!-- <v-card>
         <v-card-title class="headline">
           Welcome to the Vuetify + Nuxt.js template
         </v-card-title>
@@ -76,13 +77,18 @@
             Continue
           </v-btn>
         </v-card-actions>
-      </v-card>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium pariatur sunt laboriosam quaerat doloribus quam quisquam perspiciatis recusandae! Iure fugiat perspiciatis explicabo sapiente harum distinctio corrupti impedit odio necessitatibus?</p>
+      </v-card> -->
     </v-col>
   </v-row>
 </template>
 
 <script>
+// test data
+const test = [
+  {
+    image: '/images/work_aff-media.jpg'
+  }
+]
 export default {
   //layout: 'home',
   // transition: {
@@ -121,6 +127,9 @@ export default {
   },
   name: 'IndexPage',
   asyncData() {
+  },
+  data() {
+    return { test }
   }
 }
 </script>
@@ -156,6 +165,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 70vh;
 }
 </style>
