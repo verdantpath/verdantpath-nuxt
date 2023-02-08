@@ -3,8 +3,10 @@
     <v-col cols="12" sm="8" md="10">
       <div class="home-page-content-wrapper">
         <div><h1>Home</h1>
-        <h2>Web Developer in Portland, Oregon</h2>
-        <h3>Vue.js • WordPress • Drupal • Front-End • Full-Stack</h3>
+        <h2 v-if="$vuetify.breakpoint.mdAndDown">Web Developer in<br /> Portland, Oregon</h2> 
+        <h2 v-else>Web Developer in Portland, Oregon</h2>
+        <h3 v-if="$vuetify.breakpoint.mdAndDown">Vue.js • WordPress<br /> Drupal • Front-End<br /> Full-Stack</h3>
+        <h3 v-else>Vue.js • WordPress • Drupal • Front-End • Full-Stack</h3>
         <!-- <p>@@{{ test.image }}</p> -->
         </div>
       </div>
@@ -134,11 +136,48 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+@media (max-width: 1264px) {
+  h3 {
+    &:before,
+    &:after {
+      border: none !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    // font-size: 3rem !important;
+    // line-height: 1.25;
+  }
+  h3 {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    // font-size: 2.5rem !important;
+    // line-height: 1.25;
+  }
+  h3 {
+    font-size: 1.25rem !important;
+  }
+}
 h1 {
   display: none;
 }
 h2 {
   font-size: 3.5rem;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+  @media (max-width: 380px) {
+    font-size: 2rem;
+  }
 }
 h3 {
   font-size: 2rem;
