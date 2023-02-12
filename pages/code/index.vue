@@ -3,7 +3,7 @@
     <h1>Code Examples</h1>
     <v-container class="mb-6">
       <v-layout row wrap>
-        <v-flex xs12 sm6 md4 lg3 v-for="code in codes" :key="code.name">
+        <v-flex xs12 sm6 md4 lg3 v-for="code in codes" :key="code.name" class="portfolio-card-wrapper">
           <v-card class="portfolio-card">
             <v-responsive class="pt-4">
               <nuxt-link :to="`code/${code.slug}`">
