@@ -39,6 +39,19 @@
         }
       }
     },
+    head () {
+      return {
+        title: 'Contact Web Developer in Portland, Oregon',
+        titleTemplate: false,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Contact Web Developer in Portland, Oregon'
+          }
+        ]      
+      }
+    },
     methods: {
       handleSubmit: async function() {
         const formData = new FormData();
