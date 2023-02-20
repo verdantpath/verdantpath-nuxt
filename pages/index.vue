@@ -5,8 +5,8 @@
         <div><h1>Home</h1>
         <h2 v-if="$vuetify.breakpoint.mdAndDown">Web Developer in<br /> Portland, Oregon</h2> 
         <h2 v-else>Web Developer in Portland, Oregon</h2>
-        <h3 v-if="$vuetify.breakpoint.mdAndDown">Vue.js • WordPress<br /> Drupal • Front-End<br /> Full-Stack</h3>
-        <h3 v-else>Vue.js • WordPress • Drupal • Front-End • Full-Stack</h3>
+        <h3 v-if="$vuetify.breakpoint.mdAndDown">Vue.js • WordPress<br /> Drupal • Front-End • UX/UI<br /> Full-Stack</h3>
+        <h3 v-else>Vue.js • WordPress • Drupal • UX/UI • Front-End • Full-Stack</h3>
         <!-- <p>@@{{ test.image }}</p> -->
         </div>
       </div>
