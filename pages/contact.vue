@@ -88,7 +88,7 @@
 <style>
 #contact-form-wrapper {
   max-width: 640px;
-  margin: 5rem auto;
+  margin: 0 auto 5rem;
   background-color: #444;
   padding: 1.5rem;
 }
