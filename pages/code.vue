@@ -10,6 +10,19 @@ import codes from '@/data/code'
     data: () => ({
       codes: codes
     }),
+    head () {
+    return {
+      title: 'Code Examples Web Developer in Portland, Oregon',
+      titleTemplate: false,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Code Examples Web Developer in Portland, Oregon'
+        }
+      ]      
+    }
+  },
   }
 </script>
 <style scoped lang="scss">
