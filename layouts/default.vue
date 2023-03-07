@@ -9,6 +9,7 @@
         app
         disable-resize-watcher
       >
+        <div class="nav-close-wrapper"><v-icon @click="drawer = false">mdi-close</v-icon></div>
         <v-list>
           <v-list-item
             v-for="(navItem, i) in navItems"
@@ -75,13 +76,14 @@
         <v-card class="flex" flat tile>
           <v-card-title>
             
-            <div class="footer-left">
+            <div class="footer-left footer-content">
               <nuxt-link to="/"><img id="footer-logo" src="https://verdantpath.io/projects/logo_verdant-path-footer.png" /></nuxt-link>
               <p>Web Developer in Portland, Oregon</p>
               <p>&copy; {{ new Date().getFullYear() }}</p>
             </div>
             <v-spacer></v-spacer>
-            <v-btn
+            <div class="footer-right footer-content">
+              <v-btn
               v-for="socialItem in socialItems"
               :key="socialItem.title"
               class="mx-2"
@@ -89,11 +91,13 @@
               target="_blank"
               dark
               icon
-            >
-              <v-icon size="30px">
-                {{ socialItem.icon }}
-              </v-icon>
-            </v-btn>
+              >
+                <v-icon size="30px">
+                  {{ socialItem.icon }}
+                </v-icon>
+              </v-btn>
+            </div>
+            
           </v-card-title>
         </v-card>
       </v-footer>
