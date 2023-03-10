@@ -19,7 +19,7 @@ const projects =  [
     imageTablet: 'https://verdantpath.io/projects/work_aff-media_tablet.jpg',
     imageMobile: 'https://verdantpath.io/projects/work_aff-media_mobile.jpg',
     description: 'WordPress site for a media and advertising agency in Portland.',
-    url: 'http://affmedia.com/',
+    url: 'https://web.archive.org/web/20150801022450if_/http://affmedia.com/',
   },
   {
     id: '02',
@@ -33,21 +33,21 @@ const projects =  [
     imageTablet: 'https://verdantpath.io/projects/work_emotive-brand_tablet.jpg',
     imageMobile: 'https://verdantpath.io/projects/work_emotive-brand_mobile.jpg',
     description: 'WordPress site for a brand & design firm in San Francisco.',
-    url: 'http://emotivebrand.com/'
+    url: 'https://web.archive.org/web/20170603212134if_/https://www.emotivebrand.com/'
   },
   {
     id: '03',
-    name: 'Vista Capital Partners',
+    name: 'Rhodes Architecture',
     get slug() {
       return formatSlug(this.name)
     },
     technology: 'WordPress',
-    imageThumbnail: 'https://verdantpath.io/projects/work_vistacp_desktop.jpg',
-    imageDesktop: 'https://verdantpath.io/projects/work_vistacp_desktop.jpg',
-    imageTablet: 'https://verdantpath.io/projects/work_vistacp_tablet.jpg',
-    imageMobile: 'https://verdantpath.io/projects/work_vista_mobile.jpg',
-    description: 'WordPress site for a financial planning firm in Portland.',
-    url: 'https://vistacp.com/'
+    imageThumbnail: 'https://verdantpath.io/projects/work_rhodes_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_rhodes_desktop.jpg',
+    imageTablet: 'https://verdantpath.io/projects/work_rhodes_tablet.jpg',
+    imageMobile: 'https://verdantpath.io/projects/work_rhodes_mobile.jpg',
+    description: 'WordPress site for an architecture firm in Seattle.',
+    url: 'http://rhodesarchitecture.com/'
   },
   {
     id: '04',
@@ -65,17 +65,17 @@ const projects =  [
   },
   {
     id: '05',
-    name: 'Rhodes Architecture',
+    name: 'Vista Capital Partners',
     get slug() {
       return formatSlug(this.name)
     },
     technology: 'WordPress',
-    imageThumbnail: 'https://verdantpath.io/projects/work_rhodes_desktop.jpg',
-    imageDesktop: 'https://verdantpath.io/projects/work_rhodes_desktop.jpg',
-    imageTablet: 'https://verdantpath.io/projects/work_rhodes_tablet.jpg',
-    imageMobile: 'https://verdantpath.io/projects/work_rhodes_mobile.jpg',
-    description: 'WordPress site for an architecture firm in Seattle.',
-    url: 'http://rhodesarchitecture.com/'
+    imageThumbnail: 'https://verdantpath.io/projects/work_vistacp_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/work_vistacp_desktop.jpg',
+    imageTablet: 'https://verdantpath.io/projects/work_vistacp_tablet.jpg',
+    imageMobile: 'https://verdantpath.io/projects/work_vista_mobile.jpg',
+    description: 'WordPress site for a financial planning firm in Portland.',
+    url: 'https://web.archive.org/web/20161016095758if_/http://vistacp.com/'
   },
   {
     id: '06',
@@ -102,7 +102,7 @@ const projects =  [
     imageTablet: 'https://verdantpath.io/projects/work_wa-tribes_tablet.jpg',
     imageMobile: 'https://verdantpath.io/projects/work_wa-tribes_mobile.jpg',
     description: 'Drupal site for a Native American gaming organization in Washington.',
-    url: 'https://www.washingtontribes.org/'
+    url: 'https://web.archive.org/web/20160318142521if_/https://www.washingtontribes.org/'
   },
   {
     id: '08',
@@ -116,7 +116,7 @@ const projects =  [
     imageTablet: 'https://verdantpath.io/projects/work_seattle-city-club_tablet.jpg',
     imageMobile: 'https://verdantpath.io/projects/work_seattle-city-club_mobile.jpg',
     description: 'Drupal site for a community forum that encourages public engagement in civics and government, in Seattle.',
-    url: 'https://www.seattlecityclub.org/'
+    url: 'https://web.archive.org/web/20140721101003if_/http://www.seattlecityclub.org/'
   },
   {
     id: '09',
@@ -130,7 +130,7 @@ const projects =  [
     imageTablet: 'https://verdantpath.io/projects/work_culinary-traveler_tablet.jpg',
     imageMobile: 'https://verdantpath.io/projects/work_culinary-traveler_mobile.jpg',
     description: 'WordPress site for a food, wine and destination blog.',
-    url: 'http://culinarytraveler.com/'
+    url: 'https://web.archive.org/web/20160402035336if_/http://culinarytraveler.com/'
   },
   {
     id: '10',
@@ -141,7 +141,7 @@ const projects =  [
     technology: 'WordPress',
     imageThumbnail: 'https://verdantpath.io/projects/work_sravasti-abbey_desktop.jpg',
     imageDesktop: 'https://verdantpath.io/projects/work_sravasti-abbey_desktop.jpg',
-    imageTablet: 'https://verdantpath.io/projects/work_sravasti-abbey_tabletjpg',
+    imageTablet: 'https://verdantpath.io/projects/work_sravasti-abbey_tablet.jpg',
     imageMobile: 'https://verdantpath.io/projects/work_sravasti-abbey_mobile.jpg',
     description: 'WordPress site for a Buddhist monastery in Washington.',
     url: 'https://sravastiabbey.org/'
@@ -228,7 +228,7 @@ const projects =  [
     imageTablet: 'https://verdantpath.io/projects/work_classen_tablet.jpg',
     imageMobile: 'https://verdantpath.io/projects/work_classen_mobile.jpg',
     description: 'WordPress site for a real estate company in Washington.',
-    url: 'http://theclassenteam.com/'
+    url: 'https://web.archive.org/web/20170914140734if_/http://theclassenteam.com/'
   },
   {
     id: '17',
@@ -236,13 +236,13 @@ const projects =  [
     get slug() {
       return formatSlug(this.name)
     },
-    technology: 'WordPress',
+    technology: 'Drupal',
     imageThumbnail: 'https://verdantpath.io/projects/work_lowenstein-weatherwax_desktop.jpg',
     imageDesktop: 'https://verdantpath.io/projects/work_lowenstein-weatherwax_desktop.jpg',
     imageTablet: '',
     imageMobile: '',
     description: 'Drupal site for a patent and IP law firm in California.',
-    url: 'http://lowensteinweatherwax.com/'
+    url: 'https://web.archive.org/web/20150801195417if_/http://lowensteinweatherwax.com/'
   },
   {
     id: '18',
@@ -250,13 +250,13 @@ const projects =  [
     get slug() {
       return formatSlug(this.name)
     },
-    technology: 'WordPress',
+    technology: 'Drupal',
     imageThumbnail: 'https://verdantpath.io/projects/work_commencement_desktop.jpg',
     imageDesktop: 'https://verdantpath.io/projects/work_commencement_desktop.jpg',
     imageTablet: 'https://verdantpath.io/projects/work_commencement_tablet.jpg',
     imageMobile: 'https://verdantpath.io/projects/work_commencement_mobile.jpg',
     description: 'Drupal site for a condominium development in Washington.',
-    url: 'http://www.thecommencement.com/'
+    url: 'https://web.archive.org/web/20160304152146if_/http://www.thecommencement.com/'
   },
   {
     id: '19',
@@ -270,7 +270,7 @@ const projects =  [
     imageTablet: '',
     imageMobile: '',
     description: 'WordPress site for a Pilates studio in California.',
-    url: 'http://humanistudios.com/'
+    url: 'https://web.archive.org/web/20160117213341if_/http://www.humanistudios.com/'
   },
   {
     id: '20',
@@ -278,13 +278,13 @@ const projects =  [
     get slug() {
       return formatSlug(this.name)
     },
-    technology: 'WordPress',
+    technology: 'Drupal',
     imageThumbnail: 'https://verdantpath.io/projects/work_landedgentry_desktop.jpg',
     imageDesktop: 'https://verdantpath.io/projects/work_landedgentry_desktop.jpg',
     imageTablet: '',
     imageMobile: '',
     description: 'Drupal site for a real estate company in Washington.',
-    url: 'http://humanistudios.com/'
+    url: 'https://web.archive.org/web/20150805125039if_/http://landedgentry.com:80/'
   },
   {
     id: '21',
@@ -298,7 +298,7 @@ const projects =  [
     imageTablet: '',
     imageMobile: '',
     description: 'WordPress site for a sleep study out of Stanford University.',
-    url: 'http://projectservesleep.com/'
+    url: 'https://web.archive.org/web/20150418064133if_/http://projectservesleep.com/'
   },
   {
     id: '22',
@@ -320,13 +320,13 @@ const projects =  [
     get slug() {
       return formatSlug(this.name)
     },
-    technology: 'WordPress',
+    technology: 'HTML & CSS',
     imageThumbnail: 'https://verdantpath.io/projects/work_robin-chell-design_desktop.jpg',
     imageDesktop: 'https://verdantpath.io/projects/work_robin-chell-design_desktop.jpg',
     imageTablet: '',
     imageMobile: '',
     description: 'HTML site for an interior design firm in Seattle.',
-    url: 'http://robinchelldesign.com/'
+    url: 'https://web.archive.org/web/20100715160200/http://robinchelldesign.com/'
   },
   {
     id: '24',
@@ -340,7 +340,7 @@ const projects =  [
     imageTablet: '',
     imageMobile: '',
     description: 'WordPress site for an architecture firm in Seattle.',
-    url: 'http://axiomdesignbuild.com/'
+    url: 'https://web.archive.org/web/20140517003549if_/http://axiomdesignbuild.com/'
   }
 ]
 
