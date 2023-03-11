@@ -19,7 +19,7 @@ const navItems = [
   },
   {
     icon: '',
-    title: 'Contact Us',
+    title: 'Contact',
     to: '/contact',
     exact: false
   },
