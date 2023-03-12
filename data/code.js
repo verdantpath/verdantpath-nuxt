@@ -18,7 +18,7 @@ const codes =  [
   },
   {
     id: '02',
-    name: 'Expense Tracker',
+    name: 'Budget Calculator',
     get slug() {
       return formatSlug(this.name)
     },
@@ -46,12 +46,17 @@ const codes =  [
   },
   {
     id: '04',
-    name: 'NuxtBnb',
+    name: 'Coming Soon - VerdantBnb',
     get slug() {
       return formatSlug(this.name)
     },
     technology: 'Nuxt.js',
-    imageThumbnail: 'https://verdantpath.io/projects/code_expense-tracker_desktop.jpg',
+    imageThumbnail: 'https://verdantpath.io/projects/code-coming_soon-desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/code-coming_soon-desktop.jpg',
+    imageTablet: 'https://verdantpath.io/projects/code-coming_soon-tablet.jpg',
+    imageMobile: 'https://verdantpath.io/projects/code-coming_soon-mobile.jpg',
+    description: 'Coming soon! A clone of a popular vacation rental booking site',
+    url: 'https://bnb.verdantpath.io'
   },
   {
     id: '05',
@@ -60,10 +65,10 @@ const codes =  [
       return formatSlug(this.name)
     },
     technology: 'Nuxt.js',
-    imageThumbnail: '',
-    imageDesktop: '',
-    imageTable: '',
-    imageMobile: '',
+    imageThumbnail: 'https://verdantpath.io/projects/code_verdantpath_desktop.jpg',
+    imageDesktop: 'https://verdantpath.io/projects/code_verdantpath_desktop.jpg',
+    imageTablet: 'https://verdantpath.io/projects/code_verdantpath_tablet.jpg',
+    imageMobile: 'https://verdantpath.io/projects/code_verdantpath_mobile.jpg',
     description: 'My portfolio site built with Nuxt',
     url: 'https://verdantpath.io'
   }
