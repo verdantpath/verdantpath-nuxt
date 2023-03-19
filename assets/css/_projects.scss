@@ -1,8 +1,18 @@
+@import 'colors.scss';
+@media (max-width: 480px) {
+  
+}
+
 .project-container {
   padding: .5rem 0 3rem;
   h3 {
     font-size: 1.75rem; 
     margin: 0 0 1rem;
+  }
+  .theme--dark.v-btn.v-btn--has-bg {
+    background-color: $green-2;
+    // color: $dark-gray-1;
+    color: #fff;
   }
 }
 .portfolio-card-wrapper {
@@ -43,7 +53,9 @@
 .the-commencement,
 .humani-pilates,
 .landed-gentry,
-.project-serve {
+.project-serve,
+.axiom-design-build,
+.robin-chell-design {
   .project-tablet,
   .project-mobile {
     display: none;
